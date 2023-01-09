@@ -22,7 +22,7 @@ const NUM_ARR = [1, 2, 3, 4, 5, 6, 7, 8, 9]
  * @param {number[]} arr - the array to find duplicates in.
  * @returns {number[]} - the array of duplicate values.
  */
-function findDuplicates(arr: number[]): number[] {
+function findDuplicates (arr: number[]): number[] {
   const sortedArr = arr.slice().sort(function (a, b) {
     return a - b
   })
@@ -45,7 +45,7 @@ function findDuplicates(arr: number[]): number[] {
  *
  * @param {number[]} arr - the magic square array.
  */
-function printSquare(arr: number[]): void {
+function printSquare (arr: number[]): void {
   console.log(
     `\n*****\n${arr[0]} ${arr[1]} ${arr[2]}
 ${arr[3]} ${arr[4]} ${arr[5]}\n${arr[6]} ${arr[7]} ${arr[8]}\n*****`
@@ -60,7 +60,7 @@ ${arr[3]} ${arr[4]} ${arr[5]}\n${arr[6]} ${arr[7]} ${arr[8]}\n*****`
  * @param {number[]} square - the square array to be checked.
  * @returns {boolean} - if it's a magic square or not.
  */
-function isMagic(square: number[]): boolean {
+function isMagic (square: number[]): boolean {
   // Booleans
   const hasDuplicates = findDuplicates(square).length === 0
   const rows =
@@ -90,7 +90,7 @@ function isMagic(square: number[]): boolean {
  * @param {number[]} currentSquare - the current square to be filled up.
  * @param {number} index - the index of the numbers list.
  */
-function magicSquare(
+function magicSquare (
   nums: number[],
   currentSquare: number[],
   index: number
