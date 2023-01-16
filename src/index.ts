@@ -30,9 +30,9 @@ function findDuplicates (arr: number[]): number[] {
   // (we use slice to clone the array so the
   // original array won't be modified)
   const results = []
-  for (let i = 0; i < sortedArr.length - 1; i++) {
-    if (sortedArr[i + 1] === sortedArr[i]) {
-      results.push(sortedArr[i])
+  for (let counter = 0; counter < sortedArr.length - 1; counter++) {
+    if (sortedArr[counter + 1] === sortedArr[counter]) {
+      results.push(sortedArr[counter])
     }
   }
   return results
